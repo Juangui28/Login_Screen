@@ -8,8 +8,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/loginbkg"
+    android:background="@drawable/fondo1"
     tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+    </Space>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -24,12 +30,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:padding="24dp">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Inicia Sesión"
                 android:id="@+id/LoginText"
                 android:textSize="36sp"
                 android:textAlignment="center"
@@ -67,10 +73,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/loginButton"
-                android:text="Login"
-                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="Listos"
+                android:textSize="24sp"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="@color/purple"
+                android:backgroundTint="@color/black"
                 app:cornerRadius = "20dp"/>
 
         </LinearLayout>
@@ -80,13 +87,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
-        android:text="Not yet registered? SignUp Now"
+        android:text="¿No tienes una cuenta? Registrate"
+        android:textStyle="bold"
         android:textSize="14sp"
         android:textAlignment="center"
         android:id="@+id/signupText"
-        android:textColor="@color/purple"
-        android:layout_marginBottom="20dp"/>
+        android:textColor="@color/black"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="¿Solo quieres echar un vistazo? Explora"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:id="@+id/exploreText"
+        android:textColor="@color/black"/>
 
 
 </LinearLayout>
